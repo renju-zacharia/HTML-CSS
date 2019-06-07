@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="body">
+ 
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand btn greenColor btn-lg" type="button" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto blackText">
+    
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle blackText" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Visualizations_temp.html">Max Temperature</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Visualizations_cloudiness.html">Cloudiness</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Visualizations_humidity.html">Humidity</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Visualizations_wind_speed.html">Wind Speed</a>
+              </div>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link blackText" href="Comparison.html">Comparison</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link blackText" href="Data.html">Data</a>
+            </li> 
+    
+          </ul>
+        </div>
+      </nav>
+
+ <!-- Second Row -->
+ <div class="row box">
+       
+    <!-- First column -->
+    <div class="white col-md-6 col-sm-12 col-12 p-4 first2" >
+        <box>
+        <br>
+        <br>
+        <h2>Cloudiness</h2>   
+        <br>
+        <br>        
+        <img src="Images/Cloudiness_plot.png" style="float:left" width=60%>
+        <div><span class="blackText"> There is no visible trend for cloudiness with distance from equator. The cloudiness has both lower and higher values as for close to eqautor and away from the equator.</span> </div>
+        </box>    
+    </div>   
+
+     <!-- Second column -->
+     <div class="grayColor col-md-1 col-sm-12 col-12 p-4"></div>
+
+    <!-- Third column -->    
+    <div class="white col-md-5 col-sm-12 col-12 p-4 second2" >
+        <br>
+        <br>
+        <h2>Visualizations</h2>  
+        <br>
+        <br> 
+        <img src="Images/Temp_plot.png" width=40%>
+        <img src="Images/Humidity_plot.png" width=40%>
+        <img src="Images/Cloudiness_plot.png" width=40%>
+        <img src="Images/Wind_Speed_plot.png" width=40%>              
+               
+    </div>   
+
+</div>
+
+</div>
+
+</body>
+</html>
